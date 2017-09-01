@@ -1,16 +1,31 @@
-html {
-  min-height: 100%; }
+/* Start Toggle */
+.toggle {
+  width: 30px;
+  padding: 8px;
+  float: right;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  margin-top: 30px;
+  cursor: pointer;
+  display: none; }
 
-body {
-  height: 100%; }
+.toggle span {
+  width: 100%;
+  height: 3px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  display: block;
+  margin-bottom: 3px; }
 
+/* End Toggle */
+/* Start slideshow */
 .slideshow {
   list-style: none;
   z-index: 1; }
 
 .slideshow li span {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -25,15 +40,6 @@ body {
   -webkit-animation: imageAnimation 24s linear infinite 0s;
   -moz-animation: imageAnimation 24s linear infinite 0s;
   animation: imageAnimation 24s linear infinite 0s; }
-
-@media only screen and (min-width: 768px) {
-  .slideshow li h3 {
-    bottom: 30px;
-    font-size: 8.125em; } }
-
-@media only screen and (min-width: 1024px) {
-  .slideshow li h3 {
-    font-size: 10.9375em; } }
 
 .slideshow li:nth-child(1) span {
   background-image: url("/img/bck-image01.jpg"); }
@@ -102,41 +108,25 @@ body {
   100% {
     opacity: 0; } }
 
-@-webkit-keyframes titleAnimation {
-  0% {
-    opacity: 0; }
-  12.5% {
-    opacity: 1; }
-  25% {
-    opacity: 1; }
-  37.5% {
-    opacity: 0; }
-  100% {
-    opacity: 0; } }
-
-@-moz-keyframes titleAnimation {
-  0% {
-    opacity: 0; }
-  12.5% {
-    opacity: 1; }
-  25% {
-    opacity: 1; }
-  37.5% {
-    opacity: 0; }
-  100% {
-    opacity: 0; } }
-
-@keyframes titleAnimation {
-  0% {
-    opacity: 0; }
-  12.5% {
-    opacity: 1; }
-  25% {
-    opacity: 1; }
-  37.5% {
-    opacity: 0; }
-  100% {
-    opacity: 0; } }
-
-.no-cssanimations .slideshow li span {
-  opacity: 1; }
+/* End slideshow */
+/* plugin instagram */
+.container-instagram {
+  height: 320px;
+  text-align: center;
+  padding: 20px;
+  background-color: #ffffff; }
+  .container-instagram P {
+    color: gray;
+    font-size: 1.8rem; }
+  .container-instagram .snapwidget-widget {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: -30px; }
+  .container-instagram .btn-more {
+    padding: 15px 40px;
+    width: 180px;
+    background-color: #000000;
+    color: #fff;
+    border-radius: 45px;
+    border: none;
+    font-size: 0.9rem; }
