@@ -1,4 +1,142 @@
+/* Start Toggle */
 @import url("https://fonts.googleapis.com/css?family=Dancing+Script|Great+Vibes");
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+.toggle {
+  width: 30px;
+  padding: 8px;
+  float: right;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  margin-top: 30px;
+  cursor: pointer;
+  display: none; }
+
+.toggle span {
+  width: 100%;
+  height: 3px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  display: block;
+  margin-bottom: 3px; }
+
+/* End Toggle */
+/* Start slideshow */
+.slideshow {
+  list-style: none;
+  z-index: 1; }
+
+.slideshow li span {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  color: transparent;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: none;
+  opacity: 0;
+  z-index: 0;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-animation: imageAnimation 24s linear infinite 0s;
+  -moz-animation: imageAnimation 24s linear infinite 0s;
+  animation: imageAnimation 24s linear infinite 0s; }
+
+.slideshow li:nth-child(1) span {
+  background-image: url("/img/bck-image01.jpg"); }
+
+.slideshow li:nth-child(2) span {
+  background-image: url("/img/bck-image03.jpg");
+  -webkit-animation-delay: 6s;
+  -moz-animation-delay: 6s;
+  animation-delay: 6s; }
+
+.slideshow li:nth-child(3) span {
+  background-image: url("/img/bck-image04.jpg");
+  -webkit-animation-delay: 12s;
+  -moz-animation-delay: 12s;
+  animation-delay: 12s; }
+
+.slideshow li:nth-child(4) span {
+  background-image: url("/img/bck-image02.jpg");
+  -webkit-animation-delay: 18s;
+  -moz-animation-delay: 18s;
+  animation-delay: 18s; }
+
+@-webkit-keyframes imageAnimation {
+  0% {
+    opacity: 0;
+    -webkit-animation-timing-function: ease-in; }
+  12.5% {
+    opacity: 1;
+    -webkit-animation-timing-function: ease-out; }
+  25% {
+    opacity: 1; }
+  37.5% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+
+@-moz-keyframes imageAnimation {
+  0% {
+    opacity: 0;
+    -moz-animation-timing-function: ease-in; }
+  12.5% {
+    opacity: 1;
+    -moz-animation-timing-function: ease-out; }
+  25% {
+    opacity: 1; }
+  37.5% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+
+@keyframes imageAnimation {
+  0% {
+    opacity: 0;
+    -webkit-animation-timing-function: ease-in;
+    -moz-animation-timing-function: ease-in;
+    animation-timing-function: ease-in; }
+  12.5% {
+    opacity: 1;
+    -webkit-animation-timing-function: ease-out;
+    -moz-animation-timing-function: ease-out;
+    animation-timing-function: ease-out; }
+  25% {
+    opacity: 1; }
+  37.5% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+
+/* End slideshow */
+/* plugin instagram */
+.container-instagram {
+  height: 320px;
+  text-align: center;
+  padding: 20px;
+  background-color: #ffffff; }
+  .container-instagram p {
+    color: gray;
+    font-family: 'Montserrat' !important;
+    font-size: 1.5rem !important; }
+  .container-instagram .snapwidget-widget {
+    padding-top: 20px;
+    padding-bottom: 20px; }
+
+.btn-more {
+  padding: 15px 40px;
+  width: 180px;
+  background-color: #000000;
+  color: #fff;
+  border-radius: 45px;
+  border: none;
+  font-size: 0.9rem; }
+  .btn-more:hover {
+    background-color: grey; }
+
+/* grid layout */
 .logo p {
   font-family: 'Great Vibes', cursive;
   font-size: 1.6em;
@@ -45,14 +183,15 @@
 
 .navbar .container .links ul li a {
   color: #fff;
-  font-size: 18px;
   -webkit-transition: 0.3s ease-out;
   -moz-transition: 0.3s ease-out;
   -o-transition: 0.3s ease-out;
-  transition: 0.3s ease-out; }
+  transition: 0.3s ease-out;
+  font-family: 'Montserrat';
+  font-size: 13px; }
 
 .navbar .container .links ul li a:hover {
-  background-color: #e8e8e8;
+  background-color: #A9A9A9;
   opacity: 0.2;
   color: #000;
   border-radius: 10px;
@@ -65,18 +204,27 @@
 /* About */
 .about {
   width: 100%;
-  height: 400px;
-  text-align: center;
-  background-color: #F1F1F1; }
-  .about h3 {
-    color: #000; }
+  height: 350px;
+  background-color: #F1F1F1;
+  text-align: left;
+  padding-top: 20px; }
+  .about h2 {
+    margin-left: 50%;
+    color: #000;
+    font-family: 'Montserrat';
+    font-size: 18px; }
   .about img {
     float: left;
     height: 250px;
     width: 250px;
-    border-radius: 50%; }
+    border-radius: 50%;
+    margin-right: 130px;
+    margin-left: 50px; }
   .about p {
     color: gray; }
+  .about h5 {
+    text-align: right;
+    margin-right: 4%; }
 
 /* footer */
 .footer {
@@ -92,6 +240,52 @@
 
 /* Portifolio */
 .container-portifolio {
-  margin-top: 45%;
-  height: 350px;
-  background-color: #fff; }
+  margin-top: 600px;
+  width: 100%;
+  height: 600px;
+  text-align: center;
+  padding-top: 5%;
+  color: gray; }
+
+.main-content {
+  padding-top: 20px;
+  flex: 1 1 80%;
+  min-height: 100vh;
+  align-items: center;
+  margin-left: 10%; }
+  .main-content .wrapper {
+    height: 100%;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 12% 12% 30% 30%;
+    grid-auto-rows: minmax(200px, auto); }
+    .main-content .wrapper .img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-size: cover;
+      background-position: top left;
+      position: relative;
+      background-color: #40E0CF; }
+    .main-content .wrapper .img-1 {
+      grid-column: 1/3;
+      grid-row: 1/3;
+      background-image: url("/img/work-1.jpg"); }
+      .main-content .wrapper .img-1:hover {
+        opacity: 0.4; }
+    .main-content .wrapper .img-2 {
+      background-image: url("/img/work-2.jpg"); }
+      .main-content .wrapper .img-2:hover {
+        opacity: 0.4; }
+    .main-content .wrapper .img-3 {
+      background-image: url("/img/work-3.jpg"); }
+      .main-content .wrapper .img-3:hover {
+        opacity: 0.4; }
+    .main-content .wrapper .img-4 {
+      background-image: url("/img/work-4.jpg"); }
+      .main-content .wrapper .img-4:hover {
+        opacity: 0.4; }
+    .main-content .wrapper .img-5 {
+      background-image: url("/img/work-5.jpg"); }
+      .main-content .wrapper .img-5:hover {
+        opacity: 0.4; }

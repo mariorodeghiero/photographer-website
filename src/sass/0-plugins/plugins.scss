@@ -1,3 +1,5 @@
+$color-title: gray;
+
 /* Start Toggle */
 
 .toggle {
@@ -147,22 +149,28 @@
   text-align: center;
   padding: 20px;
   background-color: #ffffff;
-  P{
+  p{
     color: gray;
-    font-size: 1.8rem;
+    font-family: 'Montserrat' !important;
+    font-size: 1.5rem !important;
   }
   .snapwidget-widget{
     padding-top: 20px;
     padding-bottom: 20px;
-    margin-left: -30px;
-  }
-  .btn-more{
-    padding: 15px 40px;
-    width: 180px;
-    background-color: #000000;
-    color: #fff;
-    border-radius: 45px;
-    border: none;
-    font-size: 0.9rem;
   }
 }
+
+.btn-more{
+  padding: 15px 40px;
+  width: 180px;
+  background-color: #000000;
+  color: #fff;
+  border-radius: 45px;
+  border: none;
+  font-size: 0.9rem;
+  &:hover{
+  background-color: grey;
+  }
+}
+/* grid layout */
+

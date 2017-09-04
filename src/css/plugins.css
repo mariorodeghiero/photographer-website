@@ -115,18 +115,23 @@
   text-align: center;
   padding: 20px;
   background-color: #ffffff; }
-  .container-instagram P {
+  .container-instagram p {
     color: gray;
-    font-size: 1.8rem; }
+    font-family: 'Montserrat' !important;
+    font-size: 1.5rem !important; }
   .container-instagram .snapwidget-widget {
     padding-top: 20px;
-    padding-bottom: 20px;
-    margin-left: -30px; }
-  .container-instagram .btn-more {
-    padding: 15px 40px;
-    width: 180px;
-    background-color: #000000;
-    color: #fff;
-    border-radius: 45px;
-    border: none;
-    font-size: 0.9rem; }
+    padding-bottom: 20px; }
+
+.btn-more {
+  padding: 15px 40px;
+  width: 180px;
+  background-color: #000000;
+  color: #fff;
+  border-radius: 45px;
+  border: none;
+  font-size: 0.9rem; }
+  .btn-more:hover {
+    background-color: grey; }
+
+/* grid layout */
