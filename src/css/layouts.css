@@ -241,14 +241,20 @@ header {
 /* footer */
 .footer {
   position: relative;
-  height: 50px;
-  padding-top: 25px;
+  height: 100px;
   background-color: #F1F1F1;
   color: #000;
   text-align: center; }
   .footer a {
     text-decoration: none;
     color: #000; }
+
+.footer-dev {
+  position: relative;
+  background-color: #ffffff;
+  color: gray;
+  text-align: center;
+  padding: 10px; }
 
 /* Portifolio */
 .content {
