@@ -25,10 +25,14 @@ $color-title: gray;
 /* End Toggle */
 
 /* Start slideshow */
+header{
+  position: fixed;
+  height: 700px;
+}
 
 .slideshow {
   list-style: none;
-  z-index: 1;
+  z-index: 99111;
 }
 
 .slideshow li span {
@@ -52,6 +56,9 @@ $color-title: gray;
 
 .slideshow li:nth-child(1) span {
   background-image: url('/img/bck-image01.jpg');
+  position: fixed;
+  z-index: 2;
+  
 }
 
 .slideshow li:nth-child(2) span {
@@ -59,6 +66,8 @@ $color-title: gray;
   -webkit-animation-delay: 6s;
   -moz-animation-delay: 6s;
   animation-delay: 6s;
+  position: fixed;
+  z-index: 2;
 }
 
 .slideshow li:nth-child(3) span {
@@ -66,6 +75,8 @@ $color-title: gray;
   -webkit-animation-delay: 12s;
   -moz-animation-delay: 12s;
   animation-delay: 12s;
+  position: fixed;
+  z-index: 2;
 }
 
 .slideshow li:nth-child(4) span {
@@ -73,6 +84,8 @@ $color-title: gray;
   -webkit-animation-delay: 18s;
   -moz-animation-delay: 18s;
   animation-delay: 18s;
+  position: fixed;
+  z-index: 2  ;
 }
 
 @-webkit-keyframes imageAnimation {
@@ -145,7 +158,7 @@ $color-title: gray;
 /* plugin instagram */
 
 .container-instagram{
-  height: 320px;
+  height: 340px;
   text-align: center;
   padding: 20px;
   background-color: #ffffff;
@@ -153,10 +166,6 @@ $color-title: gray;
     color: gray;
     font-family: 'Montserrat' !important;
     font-size: 1.5rem !important;
-  }
-  .snapwidget-widget{
-    padding-top: 20px;
-    padding-bottom: 20px;
   }
 }
 
@@ -168,9 +177,10 @@ $color-title: gray;
   border-radius: 45px;
   border: none;
   font-size: 0.9rem;
+  margin-top: 10px;
   &:hover{
   background-color: grey;
   }
 }
-/* grid layout */
+
 

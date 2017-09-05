@@ -21,9 +21,13 @@
 
 /* End Toggle */
 /* Start slideshow */
+header {
+  position: fixed;
+  height: 700px; }
+
 .slideshow {
   list-style: none;
-  z-index: 1; }
+  z-index: 99111; }
 
 .slideshow li span {
   width: 100%;
@@ -44,25 +48,33 @@
   animation: imageAnimation 24s linear infinite 0s; }
 
 .slideshow li:nth-child(1) span {
-  background-image: url("/img/bck-image01.jpg"); }
+  background-image: url("/img/bck-image01.jpg");
+  position: fixed;
+  z-index: 2; }
 
 .slideshow li:nth-child(2) span {
   background-image: url("/img/bck-image03.jpg");
   -webkit-animation-delay: 6s;
   -moz-animation-delay: 6s;
-  animation-delay: 6s; }
+  animation-delay: 6s;
+  position: fixed;
+  z-index: 2; }
 
 .slideshow li:nth-child(3) span {
   background-image: url("/img/bck-image04.jpg");
   -webkit-animation-delay: 12s;
   -moz-animation-delay: 12s;
-  animation-delay: 12s; }
+  animation-delay: 12s;
+  position: fixed;
+  z-index: 2; }
 
 .slideshow li:nth-child(4) span {
   background-image: url("/img/bck-image02.jpg");
   -webkit-animation-delay: 18s;
   -moz-animation-delay: 18s;
-  animation-delay: 18s; }
+  animation-delay: 18s;
+  position: fixed;
+  z-index: 2; }
 
 @-webkit-keyframes imageAnimation {
   0% {
@@ -113,7 +125,7 @@
 /* End slideshow */
 /* plugin instagram */
 .container-instagram {
-  height: 320px;
+  height: 340px;
   text-align: center;
   padding: 20px;
   background-color: #ffffff; }
@@ -121,9 +133,6 @@
     color: gray;
     font-family: 'Montserrat' !important;
     font-size: 1.5rem !important; }
-  .container-instagram .snapwidget-widget {
-    padding-top: 20px;
-    padding-bottom: 20px; }
 
 .btn-more {
   padding: 15px 40px;
@@ -132,11 +141,14 @@
   color: #fff;
   border-radius: 45px;
   border: none;
-  font-size: 0.9rem; }
+  font-size: 0.9rem;
+  margin-top: 10px; }
   .btn-more:hover {
     background-color: grey; }
 
-/* grid layout */
+.logo img {
+  margin: 20px; }
+
 .logo p {
   font-family: 'Great Vibes', cursive;
   font-size: 1.6em;
@@ -149,14 +161,14 @@
 /* End Reset Some Elements */
 .navbar {
   background-color: transparent;
-  position: relative;
   width: 100%;
-  z-index: 999;
   opacity: 0.98; }
 
 .container {
   width: 90%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  position: fixed;
+  z-index: 99999; }
 
 /* Start Logo */
 .navbar .container .logo {
@@ -228,19 +240,23 @@
 
 /* footer */
 .footer {
-  margin-top: 50px;
-  height: 60px;
+  position: relative;
+  height: 50px;
   padding-top: 25px;
-  background-color: black;
-  color: #fff;
+  background-color: #F1F1F1;
+  color: #000;
   text-align: center; }
   .footer a {
     text-decoration: none;
-    color: #fff; }
+    color: #000; }
 
 /* Portifolio */
+.content {
+  top: 700px;
+  position: relative; }
+
 .container-portifolio {
-  margin-top: 600px;
+  background-color: #ffffff;
   width: 100%;
   height: 600px;
   text-align: center;
@@ -265,8 +281,7 @@
       align-items: center;
       background-size: cover;
       background-position: top left;
-      position: relative;
-      background-color: #40E0CF; }
+      position: relative; }
     .main-content .wrapper .img-1 {
       grid-column: 1/3;
       grid-row: 1/3;
