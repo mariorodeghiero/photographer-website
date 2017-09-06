@@ -22,10 +22,13 @@ $color-title: gray;
   margin-bottom: 3px;
 }
 
+
 /* End Toggle */
 
+
 /* Start slideshow */
-header{
+
+header {
   position: fixed;
   height: 700px;
 }
@@ -58,7 +61,6 @@ header{
   background-image: url('/img/bck-image01.jpg');
   position: fixed;
   z-index: 2;
-  
 }
 
 .slideshow li:nth-child(2) span {
@@ -85,7 +87,7 @@ header{
   -moz-animation-delay: 18s;
   animation-delay: 18s;
   position: fixed;
-  z-index: 2  ;
+  z-index: 2;
 }
 
 @-webkit-keyframes imageAnimation {
@@ -152,35 +154,34 @@ header{
   }
 }
 
+
 /* End slideshow */
 
 
 /* plugin instagram */
 
-.container-instagram{
+.container-instagram {
   height: 340px;
   text-align: center;
   padding: 20px;
   background-color: #ffffff;
-  p{
+  p {
     color: gray;
     font-family: 'Montserrat' !important;
     font-size: 1.5rem !important;
   }
-}
-
-.btn-more{
-  padding: 15px 40px;
-  width: 180px;
-  background-color: #000000;
-  color: #fff;
-  border-radius: 45px;
-  border: none;
-  font-size: 0.9rem;
-  margin-top: 10px;
-  &:hover{
-  background-color: grey;
+  .btn-more {
+    padding: 15px 40px;
+    width: 180px;
+    background-color: #B3B3B3;
+    color: #fff;
+    border-radius: 45px;
+    border: none;
+    font-size: 0.9rem;
+    margin-top: 10px;
+    &:hover {
+      cursor: pointer;
+      opacity: 0.4;
+    }
   }
 }
-
-

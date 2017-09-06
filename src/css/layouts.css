@@ -133,18 +133,18 @@ header {
     color: gray;
     font-family: 'Montserrat' !important;
     font-size: 1.5rem !important; }
-
-.btn-more {
-  padding: 15px 40px;
-  width: 180px;
-  background-color: #000000;
-  color: #fff;
-  border-radius: 45px;
-  border: none;
-  font-size: 0.9rem;
-  margin-top: 10px; }
-  .btn-more:hover {
-    background-color: grey; }
+  .container-instagram .btn-more {
+    padding: 15px 40px;
+    width: 180px;
+    background-color: #B3B3B3;
+    color: #fff;
+    border-radius: 45px;
+    border: none;
+    font-size: 0.9rem;
+    margin-top: 10px; }
+    .container-instagram .btn-more:hover {
+      cursor: pointer;
+      opacity: 0.4; }
 
 .logo img {
   margin: 20px; }
@@ -228,11 +228,12 @@ header {
   .about img {
     float: left;
     height: 250px;
-    width: 250px;
+    width: 20%;
     border-radius: 50%;
-    margin-right: 130px;
-    margin-left: 50px; }
+    margin-right: 5%;
+    margin-left: 2%; }
   .about p {
+    font-size: 0.9em;
     color: gray; }
   .about h5 {
     text-align: right;
@@ -240,26 +241,48 @@ header {
 
 /* footer */
 .footer {
-  position: relative;
-  height: 100px;
+  height: 150px;
   background-color: #F1F1F1;
   color: #000;
   text-align: center; }
-  .footer a {
-    text-decoration: none;
-    color: #000; }
+  .footer .address {
+    padding-top: 10px;
+    display: grid;
+    height: 140px;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: left; }
+    .footer .address .contact-footer li {
+      margin-left: 20%;
+      text-decoration: none;
+      list-style: none;
+      font-size: 0.9rem; }
+    .footer .address .copy-right {
+      padding-top: 15%;
+      margin-left: 5%; }
+    .footer .address .social-icon {
+      margin-left: 27%; }
+      .footer .address .social-icon ul {
+        float: left; }
+        .footer .address .social-icon ul li {
+          margin-top: 20%;
+          padding: 5px;
+          display: inline-block; }
+          .footer .address .social-icon ul li:hover {
+            opacity: 0.3; }
 
 .footer-dev {
-  position: relative;
   background-color: #ffffff;
   color: gray;
   text-align: center;
+  height: 20px;
   padding: 10px; }
 
 /* Portifolio */
 .content {
+  width: 100%;
   top: 700px;
-  position: relative; }
+  position: relative;
+  background-color: #ffffff; }
 
 .container-portifolio {
   background-color: #ffffff;
