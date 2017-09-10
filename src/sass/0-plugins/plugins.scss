@@ -1,4 +1,7 @@
-$color-title: gray;
+$color-title: #B3B3B3;
+$back-gray:#F1F1F1;
+$back-white: #ffffff;
+$img-opacity: 0.8;
 
 /* Start Toggle */
 
@@ -163,17 +166,15 @@ header {
 .container-instagram {
   height: 340px;
   text-align: center;
-  padding: 20px;
-  background-color: #ffffff;
   p {
     color: gray;
     font-family: 'Montserrat' !important;
     font-size: 1.5rem !important;
   }
   .btn-more {
-    padding: 15px 40px;
+    padding: 12px;
     width: 180px;
-    background-color: #B3B3B3;
+    background-color: $color-title;
     color: #fff;
     border-radius: 45px;
     border: none;
@@ -181,7 +182,7 @@ header {
     margin-top: 10px;
     &:hover {
       cursor: pointer;
-      opacity: 0.4;
+      opacity: $img-opacity;
     }
   }
 }

@@ -96,7 +96,7 @@
 .about {
     width: 100%;
     height: 350px;
-    background-color: #F1F1F1;
+    background-color: $back-gray;
     text-align: left;
     padding-top: 20px;
     h2 {
@@ -128,7 +128,7 @@
 
 .footer {
     height: 150px;
-    background-color: #F1F1F1;
+    background-color: $back-gray;
     color: #000;
     text-align: center;
     .address {
@@ -149,9 +149,9 @@
         }
         .social-icon {
             margin-left: 27%;
-            ul{
+            ul {
                 float: left;
-                li{
+                li {
                     margin-top: 20%;
                     padding: 5px;
                     display: inline-block;
@@ -165,7 +165,7 @@
 }
 
 .footer-dev {
-    background-color: #ffffff;
+    background-color: $back-white;
     color: gray;
     text-align: center;
     height: 20px;
@@ -179,11 +179,11 @@
     width: 100%;
     top: 700px;
     position: relative;
-    background-color: #ffffff;
+    background-color: $back-white;
 }
 
 .container-portifolio {
-    background-color: #ffffff;
+    background-color: $back-white;
     width: 100%;
     height: 600px;
     text-align: center;
@@ -210,42 +210,73 @@
             background-size: cover;
             background-position: top left;
             position: relative;
+            transition: transform 0.3s ease-in-out;
         }
         .img-1 {
             grid-column: 1/3;
             grid-row: 1/3;
             background-image: url('../img/work-1.jpg');
             &:hover {
-                opacity: 0.4;
+                @extend .zoom-background-hover;
             }
         }
         .img-2 {
             // grid-row: 1/3;
             background-image: url('../img/work-2.jpg');
             &:hover {
-                opacity: 0.4;
+                @extend .zoom-background-hover;
             }
         }
         .img-3 {
             // grid-column: 1/3;
             background-image: url('../img/work-3.jpg');
             &:hover {
-                opacity: 0.4;
+                @extend .zoom-background-hover;
             }
         }
         .img-4 {
             // grid-column: 1/3;
             background-image: url('../img/work-4.jpg');
             &:hover {
-                opacity: 0.4;
+                @extend .zoom-background-hover;
             }
         }
         .img-5 {
             // grid-column: 1/3;
             background-image: url('../img/work-5.jpg');
             &:hover {
-                opacity: 0.4;
+                @extend .zoom-background-hover;
             }
         }
+    }
+}
+
+.zoom-background-hover {
+    transition: opacity 0.5s, transform 0.5s;
+    opacity: $img-opacity;
+    transform: scale(1.05);
+}
+
+
+/* estilo de titulo */
+
+.style-h2 {
+    text-align: center;
+    position: relative;
+    color: $color-title;
+    &:before,
+    &:after {
+        content: "";
+        width: 15%;
+        height: 2px;
+        background: $back-gray;
+        position: absolute;
+        top: 50%;
+    }
+    &:before {
+        left: 25%;
+    }
+    &:after {
+        right: 25%;
     }
 }

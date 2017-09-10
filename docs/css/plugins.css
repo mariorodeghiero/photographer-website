@@ -124,15 +124,13 @@ header {
 /* plugin instagram */
 .container-instagram {
   height: 340px;
-  text-align: center;
-  padding: 20px;
-  background-color: #ffffff; }
+  text-align: center; }
   .container-instagram p {
     color: gray;
     font-family: 'Montserrat' !important;
     font-size: 1.5rem !important; }
   .container-instagram .btn-more {
-    padding: 15px 40px;
+    padding: 12px;
     width: 180px;
     background-color: #B3B3B3;
     color: #fff;
@@ -142,4 +140,4 @@ header {
     margin-top: 10px; }
     .container-instagram .btn-more:hover {
       cursor: pointer;
-      opacity: 0.4; }
+      opacity: 0.8; }
