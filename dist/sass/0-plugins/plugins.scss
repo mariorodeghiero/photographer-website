@@ -1,7 +1,7 @@
 $color-title: #B3B3B3;
 $back-gray:#F1F1F1;
 $back-white: #ffffff;
-$img-opacity: 0.8;
+$img-opacity: 0.6;
 
 /* Start Toggle */
 
@@ -172,11 +172,13 @@ header {
     font-size: 1.5rem !important;
   }
   .btn-more {
-    padding: 12px;
+    // padding: 12px;
+    height: 45px;
+    opacity: 0.8;
     width: 180px;
-    background-color: $color-title;
+    background-color: #000;
     color: #fff;
-    border-radius: 45px;
+    border-radius: 5px;
     border: none;
     font-size: 0.9rem;
     margin-top: 10px;
