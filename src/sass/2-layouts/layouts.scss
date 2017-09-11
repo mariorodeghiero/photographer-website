@@ -40,7 +40,7 @@
 .navbar .container .logo {
     width: 15%;
     float: left;
-    padding-top: 8px
+    padding-top: 8px;
 }
 
 .navbar .container .logo h1 {
@@ -95,29 +95,36 @@
 
 .about {
     width: 100%;
-    height: 350px;
+    height: 430px;
     background-color: $back-gray;
     text-align: left;
-    padding-top: 20px;
+    padding-top: 50px;
     h2 {
         margin-left: 50%;
         color: #000;
         font-family: 'Montserrat';
         font-size: 18px;
+        border-color: #000;
     }
-    img {
-        float: left;
-        height: 250px;
-        width: 20%;
-        border-radius: 50%;
-        margin-right: 5%;
-        margin-left: 2%;
-    }
+    
     p {
         font-size: 0.9em;
         color: gray;
+        margin-top: 4%;
+        img {
+            float: left;
+            height: 250px;
+            width: 20%;
+            background-image: url('../img/Francis.jpg');
+            background-size: cover;
+            background-position: center right;
+            border-radius: 50%;
+            margin-right: 5%;
+            margin-left: 2%;
+        }
     }
     h5 {
+        margin-top: 7%;
         text-align: right;
         margin-right: 4%;
     }
@@ -200,7 +207,7 @@
     .wrapper {
         height: 100%;
         display: grid;
-        grid-gap: 20px;
+        grid-gap: 1em;
         grid-template-columns: 12% 12% 30% 30%;
         grid-auto-rows: minmax(200px, auto);
         .img {
@@ -208,9 +215,11 @@
             justify-content: center;
             align-items: center;
             background-size: cover;
-            background-position: top left;
+            // background-position: top left;
+            background-position: center center;
             position: relative;
-            transition: transform 0.3s ease-in-out;
+            transition: transform 0.3s, opacity 0.5s ease-in-out;
+            color: #fff;
         }
         .img-1 {
             grid-column: 1/3;
@@ -258,7 +267,7 @@
 }
 
 
-/* estilo de titulo */
+/* start title style */
 
 .style-h2 {
     text-align: center;
@@ -278,5 +287,121 @@
     }
     &:after {
         right: 25%;
+    }
+}
+
+
+/* end title style */
+
+
+/*---------------*/
+
+
+/***** Marley *****/
+
+
+/*---------------*/
+
+.img figcaption {
+    text-align: right;
+}
+
+.img h2,
+.img p {
+    position: absolute;
+    right: 30px;
+    left: 30px;
+    padding: 10px 0;
+}
+
+.img p {
+    bottom: 0;
+    line-height: 1.5;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+}
+
+.img h2 {
+    top: 5px;
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: translate3d(0, 20px, 0);
+    transform: translate3d(0, 20px, 0);
+}
+
+.img:hover h2 {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.img h2::after {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    content: '';
+    -webkit-transform: translate3d(0, 40px, 0);
+    transform: translate3d(0, 40px, 0);
+}
+
+.img h2::after,
+.img p {
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+}
+
+.img:hover h2::after,
+.img:hover p {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+
+/* start depoimentos */
+
+.w3-content {
+    height: 400px;
+    background-image: url('../img/depoimentos.jpg');
+    background-size: cover;
+    background-position: center;
+    padding-top: 1%;
+    // color: #fff;
+    h2{
+        color: #ffffff;
+    }
+    .mySlides {
+        margin-left: 10%;
+        width: 80%;
+        display: none;
+        text-align: center;
+        p {
+            padding-top: 1%;
+        }
+        h4{
+            text-align: right;
+            color: #000;
+        }
+    }
+    .w3-left{
+        margin-left: 20px;
+        float: left;
+        font-size: 1.8em;
+        cursor: pointer;
+        &:hover{
+            color: #ffffff;
+        }
+    }
+    .w3-right{
+        margin-right: 20px;
+        float: right;
+        font-size: 1.8em;
+        cursor: pointer;
+        &:hover{
+            color: #ffffff;
+        }
     }
 }
