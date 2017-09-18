@@ -145,6 +145,28 @@ header {
       cursor: pointer;
       opacity: 0.6; }
 
+iframe .flip-embedded .flip-entry-titl {
+  background-color: turquoise !important; }
+
+/*returna para topo*/
+#btn-return-top {
+  background-color: lightgray;
+  bottom: 40px;
+  border: none;
+  border-radius: 5px;
+  display: none;
+  cursor: pointer;
+  position: fixed;
+  right: 25px;
+  z-index: 9; }
+  #btn-return-top img {
+    width: 25px;
+    height: 30px; }
+
+#btn-return-top:hover {
+  color: #000;
+  background-color: gainsboro; }
+
 .logo img {
   margin: 20px; }
 
@@ -223,8 +245,7 @@ header {
     margin-left: 50%;
     color: #000;
     font-family: 'Montserrat';
-    font-size: 18px;
-    border-color: #000; }
+    font-size: 18px; }
   .about p {
     font-size: 0.9em;
     color: gray;
@@ -261,6 +282,8 @@ header {
       text-decoration: none;
       list-style: none;
       font-size: 0.9rem; }
+      .footer .address .contact-footer li a {
+        color: inherit; }
     .footer .address .copy-right {
       padding-top: 15%;
       margin-left: 5%; }
@@ -409,7 +432,7 @@ header {
 
 /* start depoimentos */
 .w3-content {
-  height: 400px;
+  height: 420px;
   background-image: url("../img/depoimentos.jpg");
   background-size: cover;
   background-position: center;

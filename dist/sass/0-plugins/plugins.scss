@@ -188,3 +188,31 @@ header {
     }
   }
 }
+
+
+iframe .flip-embedded .flip-entry-titl{
+  background-color: turquoise !important;
+}
+
+/*returna para topo*/
+
+#btn-return-top {
+  background-color: lightgray;
+  bottom: 40px;
+  border: none;
+  border-radius: 5px;
+  display: none;
+  cursor: pointer;
+  position: fixed;
+  right: 25px;
+  z-index: 9;
+  img {
+    width: 25px;
+    height: 30px;
+  }
+}
+
+#btn-return-top:hover {
+  color: #000;
+  background-color: gainsboro;
+}

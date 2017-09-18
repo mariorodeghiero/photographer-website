@@ -1,0 +1,161 @@
+body {
+    background: #c1bdba;
+    background: url('../img/bck-contact.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
+}
+
+.container {
+    width: 65%;
+    margin-left: 17%;
+    margin-top: 120px;
+    position: absolute;
+    .contact-area {
+        box-shadow: 0 4px 10px 4px rgba(#2C506A, .3);
+        display: grid;
+        grid-template-columns: 35% 65%;
+        .info-area {
+            text-align: justify;
+            line-height: 1.2;
+            padding-top: 50px;
+            padding-left: 15px;
+            padding-right: 15px;
+            background-color: #4D738E;
+            opacity: 0.5;
+            color: #ffffff;
+            font-family: 'Montserrat';
+        }
+        .form-area {
+            // text-align: center;
+            background-color: #2C506A;
+            opacity: 0.8;
+            color: #ffffff;
+            padding: 30px;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-gap: 1em;
+            font-family: 'Montserrat';
+            input,
+            textarea {
+                border-radius: 5px;
+                background-color: #4D738E;
+                border: none;
+                color: #ffffff;
+            }
+            button {
+                background-color: #199485;
+                border: none;
+                border-radius: 5px;
+                width: 100px;
+                height: 20px;
+            }
+            textarea {
+                padding: 10px;
+                width: 200%;
+            }
+            input {
+                width: 90%;
+                padding: 5px;
+            }
+        }
+    }
+}
+
+
+/* Header */
+
+@import 'src/sass/0-plugins/plugins';
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Great+Vibes');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+.logo {
+    img {
+        margin: 20px;
+    }
+    p {
+        font-family: 'Great Vibes', cursive;
+        font-size: 1.6em;
+        color: #fff;
+        margin-top: 25px;
+        ;
+    }
+}
+
+.clearfix {
+    clear: both;
+}
+
+
+/* End Reset Some Elements */
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.0);
+    width: 100%;
+    opacity: 0.98;
+    margin-top: 0;
+}
+
+.container-header {
+    width: 90%;
+    margin: 0 auto;
+    position: fixed;
+    z-index: 99999;
+}
+
+
+/* Start Logo */
+
+.navbar .container-header .logo {
+    width: 15%;
+    float: left;
+    padding-top: 8px;
+}
+
+.navbar .container-header .logo h1 {
+    font-family: sans-serif;
+}
+
+
+/* End Logo */
+
+
+/* Start Links */
+
+.navbar .container-header .links {
+    width: 85%;
+    float: left;
+}
+
+.navbar .container-header .links ul {
+    float: right;
+}
+
+.navbar .container-header .links ul li {
+    display: inline-block;
+    padding: 20px;
+    padding-top: 30px;
+}
+
+.navbar .container-header .links ul li a {
+    color: #fff;
+    -webkit-transition: 0.3s ease-out;
+    -moz-transition: 0.3s ease-out;
+    -o-transition: 0.3s ease-out;
+    transition: 0.3s ease-out;
+    font-family: 'Montserrat';
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.navbar .container-header .links ul li a:hover {
+    background-color: #A9A9A9;
+    opacity: 0.2;
+    color: #000;
+    border-radius: 10px;
+    padding: 10px;
+    -webkit-transition: 0.3s ease-in;
+    -moz-transition: 0.3s ease-in;
+    -o-transition: 0.3s ease-in;
+    transition: 0.3s ease-in;
+}

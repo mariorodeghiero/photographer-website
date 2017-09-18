@@ -148,6 +148,9 @@
             text-decoration: none;
             list-style: none;
             font-size: 0.9rem;
+            a {
+                color: inherit;
+            }
         }
         .copy-right {
             padding-top: 15%;
@@ -363,12 +366,11 @@
 /* start depoimentos */
 
 .w3-content {
-    height: 400px;
+    height: 420px;
     background-image: url('../img/depoimentos.jpg');
     background-size: cover;
     background-position: center;
     padding-top: 1%;
-    // color: #fff;
     h2{
         color: #ffffff;
     }

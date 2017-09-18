@@ -33,7 +33,7 @@ gulp.task('build-img', function() {
 
 // Tarefa que aplica o uglify e mimifica os arquivos css e js, onde apontados no arquivo html
 gulp.task('usemin', function() {
-   return gulp.src('dist/**/*.html')
+    return gulp.src('dist/**/*.html')
         .pipe(usemin({
          js: [ uglify()],
          css: [ cssmin() ]

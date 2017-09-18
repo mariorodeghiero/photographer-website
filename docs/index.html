@@ -9,16 +9,17 @@
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" type="text/javascript"></script>
 
     <link rel="stylesheet" href="css/index.min.css"/>
-    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" rel="stylesheet" /> -->
+
+
 </head>
 
 <body>
 
     <header>
 
-        <div class="navbar">
+        <div class="navbar" id="home">
             <div class="container">
-                <div class="logo">
+                <div class="logo animated zoomIn">
                     <!-- <p>Francis Diógenes</p> -->
                     <img src="img/logo.jpg" width="150px" alt="">
                 </div>
@@ -28,19 +29,22 @@
                     <span></span>
                     <span></span>
                 </div>
-                <div class="links">
+                <div class="links animated zoomIn">
                     <ul>
                         <li>
-                            <a href="../#">HOME</a>
+                            <a class="scroll" href="">HOME</a>
                         </li>
                         <li>
-                            <a href="../#">ABOUT ME</a>
+                            <a class="scroll" href="#about-me">ABOUT ME</a>
                         </li>
                         <li>
-                            <a href="../#">PORTIFOLIO</a>
+                            <a class="scroll" href="#portifolio">PORTIFOLIO</a>
                         </li>
                         <li>
-                            <a href="../#">CONTACT</a>
+                            <a class="scroll" href="#depoimentos">DEPOIMENTOS</a>
+                        </li>
+                        <li>
+                            <a href="../contact.html">CONTACT</a>
                         </li>
                     </ul>
                 </div>
@@ -69,20 +73,19 @@
 
     <div class="content">
 
-        <section class="about">
+        <section class="about " id="about-me">
             <h2>About Me</h2>
-            <p> <img> Lorem ipsum dolor sit amet consectetur,
-                adipisicing elit. Ipsa ea ex earum beatae voluptas? Nostrum laudantium ratione quod repellat vel a incidunt
-                modi dignissimos at eligendi facere molestias corporis expedita quisquam dolore esse in non, nobis et asperiores
-                sapiente vero neque laboriosam? Ab quis nostrum laborum corporis deleniti ad officiis cum perferendis facere
-                dolor eaque dolore laboriosam, rem sed! At autem pariatur, aliquid aliquam obcaecati in, voluptatibus recusandae
-                ut, maxime officia expedita odit quis similique numquam? Doloribus tempore voluptate dicta. Mollitia expedita
-                dicta eaque, maiores alias earum perferendis ea consectetur tenetur saepe! Eligendi labore saepe nulla dolores
-                commodi dolorem laudantium.</p>
+            <p> <img> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa ea ex earum beatae voluptas? Nostrum laudantium
+                ratione quod repellat vel a incidunt modi dignissimos at eligendi facere molestias corporis expedita quisquam
+                dolore esse in non, nobis et asperiores sapiente vero neque laboriosam? Ab quis nostrum laborum corporis
+                deleniti ad officiis cum perferendis facere dolor eaque dolore laboriosam, rem sed! At autem pariatur, aliquid
+                aliquam obcaecati in, voluptatibus recusandae ut, maxime officia expedita odit quis similique numquam? Doloribus
+                tempore voluptate dicta. Mollitia expedita dicta eaque, maiores alias earum perferendis ea consectetur tenetur
+                saepe! Eligendi labore saepe nulla dolores commodi dolorem laudantium.</p>
             <h5>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem, beatae"</h5>
         </section>
 
-        <section class="container-portifolio">
+        <section class="container-portifolio" id="portifolio">
             <h2 class="style-h2">My Portfolio</h2>
             <div class="main-content">
                 <div class="wrapper">
@@ -112,7 +115,7 @@
                     </div>
                     <div class="img img-5">
                         <figcaption>
-							<h2>Floripa <span>city</></h2>
+							<h2>Photograph <span>City</span></h2>
 							<p>Registro da beleza de Florianópolis</p>
 						</figcaption>
                     </div>
@@ -120,20 +123,20 @@
             </div>
         </section>
               
-        <div class="w3-content">      
+        <div class="w3-content" id="depoimentos">      
             <h2 class="style-h2">Depoimentos</h2>
 
-            <section class="mySlides">
+            <section class="mySlides animated zoomIn">
                 <p >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, dicta! Ad, facere rerum molestias asperiores commodi culpa laudantium rem ea deleniti nesciunt fugiat nisi! Provident adipisci perspiciatis eius? Fugit sint repellendus molestias minima cumque odio consequatur voluptatum dolorum illo temporibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio aperiam minus quo rem delectus, beatae asperiores vero sunt excepturi officia!</p>
-                <h4>"lorem ipsum dolor"</h4>
+                <h4>"lorem & dolor"</h4>
             </section>
-            <section class="mySlides">
+            <section class="mySlides animated zoomIn">
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum dolor, fuga, animi impedit eligendi rem praesentium eveniet rerum aliquam porro incidunt? Cumque magnam cum nisi eius soluta nobis sint est, dolorem ipsa impedit. Nostrum inventore sint odio architecto maxime, nisi atque, optio officia dolor et iure fugit veniam ipsa esse!</p>
-                <h4>"lorem ipsum dolor"</h4>
+                <h4>"lorem & dolor"</h4>
             </section>
-            <section class="mySlides">
+            <section class="mySlides animated zoomIn">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id sapiente debitis fugit non necessitatibus incidunt expedita nam? Voluptate ratione mollitia repellat voluptatum quam alias nihil maiores ea velit, molestias odit.</p>
-                <h4>"lorem ipsum dolor"</h4>
+                <h4>"lorem & dolor"</h4>
             </section>
             <div >
                 <div class="w3-left" onclick="plusDivs(-1)">&#10094;</div>
@@ -141,15 +144,16 @@
                     <!-- <span class="w3-badge demo" onclick="currentDiv(1)"></span>
                                 <span class="w3-badge demo" onclick="currentDiv(2)"></span>
                                 <span class="w3-badge demo" onclick="currentDiv(3)"></span> -->
-            </div> 
-        </div>
+                    </div>
+                </div>
 
                 <section class="container-instagram">
                     <h2 class="style-h2">Instagram</h2>
                     <!-- SnapWidget -->
-                    <iframe src="https://snapwidget.com/embed/436418" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:1280px; height:175px"></iframe>
-        
-                    <a href="#"><button class="btn-more">See more</button></a>
+                    <iframe src="https://snapwidget.com/embed/436418" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no"
+                        style="border:none; overflow:hidden; width:1280px; height:175px"></iframe>
+
+                    <a href="https://www.instagram.com/francisphotographer/"><button class="btn-more">See more</button></a>
                 </section>
 
                 <div class="footer">
@@ -160,21 +164,24 @@
                             </div>
                             <div class="social-icon">
                                 <ul>
-                                    <li><a href="#"><img src="img/facebook-icon.png"/></a></li>
-                                    <li><a href="#"><img src="img/instagram-icon.png"/></a></li>
-                                    <li><a href="#"><img src="img/twitter-icon.png"/></a></li>
+                                    <li><a href="https://www.facebook.com/francisphotographer/"><img src="img/facebook-icon.png"/></a></li>
+                                    <li><a href="https://www.instagram.com/francisphotographer/"><img src="img/instagram-icon.png"/></a></li>
+                                    <li><a href="https://twitter.com/FrancisDiogenes"><img src="img/twitter-icon.png"/></a></li>
                                 </ul>
                             </div>
                             <div class="contact-footer">
                                 <li>CONTACT</li>
                                 <li>Francis Diógenes</li>
                                 <li>Phone: +55 (48) - 99999 9999</li>
-                                <li>Email: francis.diogenes@gmail.com</li>
+                                <li>Email: <a href="mailto:francis.diogenes@gmail.com?Subject=Contato%20via%20website">francis.diogenes@gmail.com</a></li>
                                 <li>City: Florianópolis - SC/Brasil</li>
                             </div>
                         </div>
                     </footer>
                 </div>
+
+                <!--Botao para retornar  ao topo da pagina-->
+                <button class="scroll" onclick="topFunction()" id="btn-return-top" title="Go to top"><img src="img/top.svg" alt="Botão para retornar ao topo"></button>
 
                 <div class="footer-dev">
                     <footer>
